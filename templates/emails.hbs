@@ -1,1 +1,8 @@
 <h1> Kam-mail </h1>
+
+<ul>
+  {{#each email in model}}
+    <li>{{#link-to 'email' email.id}}
+    {{email.sender}} : {{email.subjectLine}}{{/link-to}}</li>
+  {{/each}}
+</ul>
