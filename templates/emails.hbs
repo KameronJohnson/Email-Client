@@ -1,19 +1,21 @@
-
 <h1> Kamail </h1>
+
 <div class="col-md-6">
+
 <br>
-<h3> A place for email </h3>
 
-<ul>
-  {{#each email in model}}
-    <li>{{#link-to 'email' email.id}}
-    {{email.sender}}: {{email.subjectLine}}{{/link-to}}</li>
-  {{/each}}
-</ul>
+  <h3> A place for email </h3>
 
-{{#link-to 'new-email' classNames="btn btn-info"}}Compose Email{{/link-to}}
+    <ul>
+      {{#each email in model}}
+        <li>{{#link-to 'email' email.id}}
+        {{email.sender}}: {{email.subjectLine}}{{/link-to}}</li>
+      {{/each}}
+    </ul>
 
+    {{#link-to 'new-email' classNames="btn btn-info"}}Compose Email{{/link-to}}
 </div>
+
 <br>
 
 <div class="col-xs-6">
