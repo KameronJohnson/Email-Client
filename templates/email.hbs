@@ -1,6 +1,15 @@
-<h3>{{subjectLine}}</h3>
-<ul>
-  <li>From: {{sender}}</li>
-  <li>To: {{recipient}}</li>
-</ul>
-  <p>{{body}}</p>
+<div class="col-md-12">
+  <h3>{{subjectLine}}</h3>
+  <ul class="hidden-dots">
+    <li>From: {{sender}}</li>
+    <li>To: {{recipient}}</li>
+  </ul>
+  <hr>
+    <p>{{body}}</p>
+  <hr>
+
+
+</div>
+
+<h6>{{#link-to "emails"}}Back{{/link-to}}</h6>
+{{outlet}}

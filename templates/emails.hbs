@@ -1,5 +1,8 @@
 <h1> Kam-mail </h1>
-
+<br>
+<h3> A place for email </h3>
+<br>
+<div class="col-md-6">
 <ul>
   {{#each email in model}}
     <li>{{#link-to 'email' email.id}}
@@ -8,3 +11,10 @@
 </ul>
 
 {{#link-to 'new-email' classNames="btn btn-info"}}Create New Email{{/link-to}}
+
+</div>
+<br>
+
+<div class="col-xs-6">
+  <img src="img/Kam-mail.jpg">
+</div>
